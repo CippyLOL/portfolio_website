@@ -9,7 +9,7 @@ body {
     font-family: 'Recursive', sans-serif;
     height: 100vh;
     background: 
-    linear-gradient(rgba(63, 191, 191, 0.71), rgba(80, 40, 255, 0.8)),
+    linear-gradient(rgba(63, 191, 191, 0.71), rgba(80, 40, 255, 0.99)),
     url('background.jpg') no-repeat center center/ cover;
     color: #ffffff;
     padding: 0;
@@ -87,7 +87,7 @@ span.fade {
 .projects {
     height: 100vh;
     width: 100%;
-    background-color: lightblue;
+    background-color: rgb(79, 40, 255, 0.99);
     /* display: flex;
     flex-direction: row;
     justify-content: space-around; */
@@ -103,7 +103,7 @@ span.fade {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    background-color: khaki;
+    /* background-color: khaki; */
     
 }
 
@@ -113,7 +113,10 @@ span.fade {
     background: grey;
     margin: 30px;
     box-sizing: border-box;
-    font-size: 50px;
+    /* font-size: 50px; */
+
+    text-align: center;
+    word-wrap: break-word;
 }
 
 /* .proj-grid {
@@ -145,20 +148,55 @@ span.fade {
     padding: 7px;
 }
 
+footer {
+    background-color: rgba(255, 230, 0, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-@media(min-width: 1200px) {
+.footer-items-profile {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-items-profile h4, p {
+    color: black;
+}
+
+.footer-items-profile h4:hover {
+    color: white;
+}
+
+.footer-items-profile p:hover {
+    color: white;
+}
+.footer-items-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media(max-width: 1200px) and (min-width: 800px) {
     h1 {
         font-size: 5rem;
     }
 
     .proj-container {
         margin-top: 170px;
+        margin-bottom: 80px;
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 800px) and (min-width: 600px) {
     h1 {
         font-size: 3rem;
+    }
+
+    .proj-container {
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 
     .proj-item {
@@ -175,6 +213,10 @@ span.fade {
 
     h3 {
         font-size: 1rem;
+    }
+
+    .proj-container {
+        margin-top: 40px;
     }
 
     .proj-item {

@@ -131,7 +131,9 @@ footer {
     flex-direction: row;
     justify-content: center;
     line-height: 0.2rem;
-    padding-top: 1%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-size: 1rem;
 }
 
 .footer-items-profile {
